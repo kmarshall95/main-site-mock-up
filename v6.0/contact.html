@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Blue Brothers Designs || Home </title>
+    <link rel="stylesheet" type="text/css" href="styles/navigation_bar.css">
+    <link rel="stylesheet" type="text/css" href="styles/font.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<style>
+    body{
+            
+    background-image: url(../web_pic/gummy_different.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
+    </style>
+
+<body>
+
+    <nav id="myTopnav">
+        <div class="logo">
+            <a href="index.html"><img src="/web_pic/BBDLogofeb21219523PM.jpeg"></a>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="web_develop.html">Services</a>
+        <a href="clients.html">Portfolio</a>
+        <a class="active" href="contact.html">Contact</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </nav>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() 
+        {
+            var x = document.getElementById("myTopnav");
+          if (x.className === "nav") {
+            x.className += " responsive";
+            } else {
+            x.className = "nav";
+          }
+        }    
+    </script>
+
+
+    <div class="form-container">
+        <form name="contactForm" method="post" action="php/c.php">
+            <fieldset>
+                <Legend>
+                    Contact Details
+                </Legend>
+
+                <p>First Name</p><input type="text" name="firstname" maxlength="30" placeholder="First Name">
+                <p>Last Name</p><input type="text" name="lastname" maxlength="60" placeholder="Last Name">
+                <p>Email</p><input type="email" name="email" maxlength="60" placeholder="Email Address">
+                <p>Phone</p><input type="tel" name="phone" maxlength="10" placeholder="(###)-###-####">
+                <p>Current Website Link</p><input type="text" name="curSite" maxlength="100" placeholder="URL">
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>Pick A Service</h3>
+                </legend>
+
+                <div class="title-card">
+                    <label class="title" for="Type-of-Development">
+                        <p>What Can Our Web Development Team Build For You?</p>
+                    </label>
+                    <select name="developmentType" id="Type-of-Development">
+                        <option value="none"></option>
+                        <option value="E-COMMERCE">Personal Website for Yourself/Resume Website</option>
+                        <option value="Single Page">Landing Page Website</option>
+                        <option value="Portfolio">Portfolio Website</option>
+                        <option value="Photo Portfolio">Photo Portolio Website</option>
+                        <option value="Blog">Blog*</option>
+                        <option value="E-commerce">E-commerce Website/Online Store</option>
+                        <option value="Video">Video/Image Website</option>
+                        <option value="Restaurant">Restaurant Website</option>
+                        <option value="Informative">Informative Website</option>
+                        <option value="Graphic">Graphic Design Website</option>
+                        <option value="custom">Custom Website**</option>
+                    </select>
+                </div>
+                <div class="title-card">
+                    <label class="title" for="Type-of-gDevelopment">
+                        <p>What Can Our Graphic Design Team Create For You?</p>
+                    </label>
+                    <select name="gdevelopmentType" id="Type-of-gDevelopment">
+                        <option value="none"></option>
+                        <option value="Flyer">Flyer</option>
+                        <option value="Logo">Logo</option>
+                        <option value="Busiess Card">Business Card</option>
+                        <option value="StationaryDesign">Stationary Design</option>
+                        <option value="Blog">Leafet/Brochure</option>
+                        <option value="Advertis">Ads/Banner</option>
+                        <option value="custom">Custom Design Project**</option>
+                    </select>
+                </div>
+
+
+                <div class="title-card">
+                    <label class="title">
+                        Expect Finish Date:
+                    </label>
+
+                    <input type="date" name="startdate">
+                </div>
+
+
+                <br />
+                <div class="title-card">
+                    <label class="title">
+                        Message:
+                    </label>
+                    <br />
+                    <textarea rows="6" cols="25" id="message" name="message" bplaceholder="Write Something"></textarea>
+                </div>
+
+                <br />
+                <input type="submit" value="Submit" name="submit" class="submitbtn" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+<footer>
+    <div class="three_subsection_footer">
+        <div class="logo_footer"><a href="index.html"><img src="/web_pic/BBDLogofeb21219523PM.jpeg"></a>
+        </div>
+        <div class="footer_nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="web_develop.html">Services</a></li>
+                <li><a href="clients.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer_contact">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+    <p>This website was created by &copy; Blue Brothers Designs</p>
+</footer>
+
+</html>

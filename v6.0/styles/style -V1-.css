@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    width: 100%;
+    background: #00316b;
+    overflow: auto;
+    color: white;
+}
+
+nav a {
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: Arial;
+    text-align: center;
+    margin: 15px 0 10px 0;
+
+}
+
+nav a:hover {
+    background: white;
+    color: #00316b;
+    text-transform: uppercase;
+}
+
+.logo {}
+
+.logo img {
+    max-height: 100px;
+    position: absolute;
+    margin: 15px 0 10px 0;
+}
+
+ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li:hover {
+    background: white;
+    color: #00316b;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background: #001f44;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+
+top-container{
+    
+}
+/********************************************************/
+/**************web page**********************************/
+/********************************************************/
+.our_process{
+    margin-left: 10%;
+    margin-right:10%;
+    display: grid;
+    grid-gap: 2.5px;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+}
+.Our_process img{
+    
+}
+.whtwedo{
+    text-align: center;
+}
+/*End of Body*/
+
+/*Footer*/
+.three_subsection_footer > div {
+    display: inline-block;
+}
+.logo_footer img {
+    max-height: 100px;
+    margin: 15px 0 10px 0;
+}
+.subfooter{
+    text-align: center;
+}
